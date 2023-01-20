@@ -1,20 +1,13 @@
 package cl.duoc.examen.model.dto;
 
-public class persona {
+public class Persona {
     private int    idPersona;
     private String dni;
     private String nombre;
     private String apellido;
     private String telefono;
-    
-    public persona(int idPersona, String dni, String nombre, String apellido, String telefono) {
-        this.idPersona = idPersona;
-        this.dni = dni;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.telefono = telefono;
-    }
-    public persona() {
+
+    public Persona() {
     }
     public int getIdPersona() {
         return idPersona;

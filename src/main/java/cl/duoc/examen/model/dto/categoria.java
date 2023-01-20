@@ -2,17 +2,12 @@ package cl.duoc.examen.model.dto;
 
 import java.util.List;
 
-public class categoria {
-    private int    idCategoria;
-    private String nombre;
-    private List<instrumento> instrumentosByIdCategoria;
+public class Categoria {
+    private int               idCategoria;
+    private String            nombre;
+    private List<Instrumento> InstrumentosByIdCategoria;
     
-    public categoria(int idCategoria, String nombre, List<instrumento> instrumentosByIdCategoria) {
-        this.idCategoria = idCategoria;
-        this.nombre = nombre;
-        this.instrumentosByIdCategoria = instrumentosByIdCategoria;
-    }
-    public categoria() {
+    public Categoria() {
     }
     public int getIdCategoria() {
         return idCategoria;
@@ -26,10 +21,7 @@ public class categoria {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public List<instrumento> getInstrumentosByIdCategoria() {
-        return instrumentosByIdCategoria;
-    }
-    public void setInstrumentosByIdCategoria(List<instrumento> instrumentosByIdCategoria) {
-        this.instrumentosByIdCategoria = instrumentosByIdCategoria;
+    public List<Instrumento> getInstrumentosByIdCategoria() {
+        return InstrumentosByIdCategoria;
     }
 }

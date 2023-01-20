@@ -1,18 +1,12 @@
 package cl.duoc.examen.model.dto;
 
-public class instrumento {
+public class Instrumento {
     private int    idInstrumento;
     private String nombre;
     private String marca;
     private int    idCategoria;
     
-    public instrumento(int idInstrumento, String nombre, String marca, int idCategoria) {
-        this.idInstrumento = idInstrumento;
-        this.nombre = nombre;
-        this.marca = marca;
-        this.idCategoria = idCategoria;
-    }
-    public instrumento() {
+    public Instrumento() {
     }
     public int getIdInstrumento() {
         return idInstrumento;
