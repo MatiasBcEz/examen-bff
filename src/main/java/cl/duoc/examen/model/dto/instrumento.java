@@ -1,0 +1,41 @@
+package cl.duoc.examen.model.dto;
+
+public class instrumento {
+    private int    idInstrumento;
+    private String nombre;
+    private String marca;
+    private int    idCategoria;
+    
+    public instrumento(int idInstrumento, String nombre, String marca, int idCategoria) {
+        this.idInstrumento = idInstrumento;
+        this.nombre = nombre;
+        this.marca = marca;
+        this.idCategoria = idCategoria;
+    }
+    public instrumento() {
+    }
+    public int getIdInstrumento() {
+        return idInstrumento;
+    }
+    public void setIdInstrumento(int idInstrumento) {
+        this.idInstrumento = idInstrumento;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getMarca() {
+        return marca;
+    }
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+    public int getIdCategoria() {
+        return idCategoria;
+    }
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+}
