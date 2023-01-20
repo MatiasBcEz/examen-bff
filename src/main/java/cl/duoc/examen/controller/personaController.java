@@ -1,5 +1,4 @@
 package cl.duoc.examen.controller;
 
-public class personaController {
-    
+public class PersonaController {
 }
