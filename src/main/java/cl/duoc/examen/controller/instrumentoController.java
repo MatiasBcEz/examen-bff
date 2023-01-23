@@ -28,5 +28,4 @@ public class InstrumentoController {
     public Instrumento add(@RequestBody Instrumento instrumento){
         return instrumentoService.add(instrumento);
     }
-
 }

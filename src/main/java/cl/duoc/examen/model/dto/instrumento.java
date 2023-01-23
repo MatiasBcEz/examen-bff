@@ -4,7 +4,7 @@ public class Instrumento {
     private int    idInstrumento;
     private String nombre;
     private String marca;
-    private int    idCategoria;
+    private String categoria;
     
     public Instrumento() {
     }
@@ -26,10 +26,10 @@ public class Instrumento {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    public int getIdCategoria() {
-        return idCategoria;
+    public String getCategoria() {
+        return categoria;
     }
-    public void setIdCategoria(int idCategoria) {
-        this.idCategoria = idCategoria;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 }
