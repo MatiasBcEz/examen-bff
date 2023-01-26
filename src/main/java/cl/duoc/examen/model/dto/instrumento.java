@@ -1,13 +1,15 @@
 package cl.duoc.examen.model.dto;
 
 public class Instrumento {
+    
     private int    idInstrumento;
     private String nombre;
     private String marca;
-    private String categoria;
-    
+    private int idCategoria;
+
     public Instrumento() {
     }
+
     public int getIdInstrumento() {
         return idInstrumento;
     }
@@ -26,10 +28,13 @@ public class Instrumento {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    public String getCategoria() {
-        return categoria;
+
+    public int getIdCategoria() {
+        return idCategoria;
     }
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
     }
+    
 }

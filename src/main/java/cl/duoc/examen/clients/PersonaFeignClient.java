@@ -12,10 +12,10 @@ import cl.duoc.examen.model.dto.Persona;
 @FeignClient(name = "svc-personas", url = "http://localhost:8181/personas")
 public interface PersonaFeignClient {
     
-    @GetMapping(path = "/personas", produces = { "application/json" })
+    @GetMapping(path = "/persona", produces = { "application/json" })
     public List<Persona> getAll();
 
-    @PostMapping(path = "/personas", consumes = {"application/json"},  produces = {"application/json"})
+    @PostMapping(path = "/persona", consumes = {"application/json"},  produces = {"application/json"})
     public Persona add(@RequestBody Persona Personas);
 
 }
