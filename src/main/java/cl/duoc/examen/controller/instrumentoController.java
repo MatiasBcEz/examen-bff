@@ -15,17 +15,17 @@ import cl.duoc.examen.services.InstrumentoService;
 @RestController
 @RequestMapping("/instrumentos-bff")
 public class InstrumentoController {
-    
+
     @Autowired
     InstrumentoService instrumentoService;
 
     @GetMapping(path = "/instrumento", produces = { "application/json" })
-    public List<Instrumento> getAll(){
+    public List<Instrumento> getAll() {
         return instrumentoService.getAll();
     }
 
-    @PostMapping(path = "/instrumento", consumes = {"application/json"},  produces = {"application/json"})
-    public Instrumento add(@RequestBody Instrumento instrumento){
+    @PostMapping(path = "/instrumento", consumes = { "application/json" }, produces = { "application/json" })
+    public Instrumento add(@RequestBody Instrumento instrumento) {
         return instrumentoService.add(instrumento);
     }
 }
