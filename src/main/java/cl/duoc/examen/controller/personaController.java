@@ -13,7 +13,7 @@ import cl.duoc.examen.model.dto.Persona;
 import cl.duoc.examen.services.PersonaService;
 
 @RestController
-@RequestMapping("/persona-bff")
+@RequestMapping("/personas-bff")
 public class PersonaController {
     
     @Autowired
